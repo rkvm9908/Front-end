@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        body{
+            color: white;
+            background-color: black;
+            h1{
+                padding: 20px;
+            }
+        }
+        .content{
+            padding: 20px;
+            a{
+                padding-left: 10px;
+                color: chartreuse;
+                text-decoration: none;
+            }
+        }
+        .container{
+            display: flex;
+            justify-content:space-between ;
+            flex-wrap: wrap;
+            margin: 100px;
+        }
+        .container .box{
+          flex-basis: 40%;
+          padding-left: 20px;
+          p{
+            width: 70%;
+            color: black;
+            background-color: aquamarine;
+            padding: 10px;
+          }
+        }
+
+    </style>
+</head>
+
+<body>
+    <center><h1 id="hehe">ANCHOR TAG</h1></center>
+    <hr>
+    <div class="content">
+    <center><p>open link in this window or tab self <a href="https://www.google.co.in/" target="_self">Google</a></p>
+    <p>open link in  this new window or tab blank <a href="https://www.google.co.in/" target="_blank">Google</a></p>
+    <p>open link in next level frame parent <a href="https://www.google.co.in/" target="_parent">Google</a></p>
+    <p>open link as the top of the Document in same top <a href="https://www.google.co.in/" target="_top">Google</a></p></center>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="box"><h2>Email</h2><p>Email : <a href="mailto:Mathuprasanth9908@gmail.com">Send to E-mail</a></p></div>
+        <div class="box"><h2>Phone</h2><p>Phone : <a href="tel:+916380689908">Call Me!</a></p></div>
+        <div class="box"><h2>Download</h2><p>Download : <a href="path/to/txt.txt" download="txt.txt">Download Now!</a></p></div>
+        <div class="box"><h2>Image</h2><p>Image : <a  href="img/AqflZ7R-akatsuki-wallpaper-hd.jpg" download="Image">Download Image!</a></p></div>
+        <div class="box"> <!-- internal link -->
+                <h2>Internal Link :</h2><p>Internal link : <a href="#hehe">About us</a></p></div>
+        <div class="box"><!-- absolutize and relative -->
+                 <h2>Absolute link :</h2><p>Absolute link : <a href="https://www.google.co.in/">Google</a></p></div>
+        <div class="box"><h2>Relative link : </h2><p>Relative link : <a href="../task2/index.html" target="_blank">Task link</a></p></div>
+    </div>
+</body>
+
+</html>
