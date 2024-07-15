@@ -1,0 +1,90 @@
+body{
+    background-image: url(XUInXuf-itachi-wallpaper-hd.jpg);
+    background-size: cover;
+}
+.box1{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+.box{
+    display: flex;
+    justify-content:center;
+    margin-top: 100px;
+    
+}
+.one form {
+    background-color: rgba(255, 255, 255, 0.402);
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.one input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.two form {
+    height: 92%;
+    background-color: rgba(13, 183, 240, 0.609);
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.two input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.dob{
+    width:162px;
+}
+.three {
+    background-color: rgba(198, 183, 248, 0.571);
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.three input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.three ::placeholder{
+     color:rgb(37, 180, 180);
+}
+textarea{
+    width: 170px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.four {
+    background-color: rgba(254, 254, 254, 0.42);
+    width: 500px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.four table{
+    width: 500px; 
+    text-align: left;
+}
+
+.four th, td {
+    padding: 2px;
+}
+.four table input{
+    padding: 5px;
+    border-radius: 5px;
+}
+

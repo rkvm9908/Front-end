@@ -1,0 +1,157 @@
+<!-- input types -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <!-- form tag -->
+        <div class="box1">
+            <div class="one">
+                <form action="#">
+                    <h2>
+                        <center>Login Form</center>
+                    </h2>
+                    <label for="firstname">Username</label>
+                    <input type="text" name="username" placeholder="username">
+                    <br>
+                    <label for="password">Password </label>
+                    <input type="password" name="password" placeholder="password">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="three">
+                <!-- placeholder color -->
+                <center>
+                    <h3>Placeholder Color</h3>
+                    <h5>Enter Course Details Here</h5>
+                </center>
+                <input type="text" name="cname" placeholder="Course Name">
+                <input type="text" name="cdura" placeholder="Course Duration">
+                <textarea placeholder="Course Details"></textarea>
+                <input type="submit" value="Get Details">
+            </div>
+        </div>
+        <!-- registration form -->
+        <div class="two">
+            <form action="#">
+                <h2>
+                    <center>Registration Form</center>
+                </h2>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" placeholder="firstname">
+                <br>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" placeholder="lastname">
+                <br>
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="username">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="email">
+                <br>
+                <label for="dob">Date of Birth</label>
+                <input class="dob" type="date" name="dob">
+                <br>
+                <label for="mobno">Mobile Number</label>
+                <input type="tel" name="mobno" placeholder="mobile number">
+                <br>
+                <label for="password">Password </label>
+                <input type="password" name="password" placeholder="password">
+                <br>
+                <label for="confirmPassword">Confirm Password </label>
+                <input type="password" name="confirmPassword" placeholder="confirm password">
+                <br>
+                <input type="submit" value="Register">
+        </div>
+        <br>
+        <div class="four">
+            <form>
+                <table>
+                    <center><h2>Registration Form</h2></center>
+                    <tr>
+                        <th>Enter Firstname</th>
+                        <td><input type="text" name="fn" placeholder="john" required></td>
+                    </tr>
+                    <tr>
+                        <th>Enter Lastname</th>
+                        <td><input type="text" name="ln" placeholder="john" required></td>
+                    </tr>
+                    <tr>
+                        <th>Enter Email</th>
+                        <td><input type="email" name="email" placeholder="abc@gmail.com" required></td>
+                    </tr>
+                    <tr>
+                        <th>Enter Password</th>
+                        <td><input type="password" name="pwd" placeholder="1212" required></td>
+                    </tr>
+                    <tr>
+                        <th>Enter Confirm Password</th>
+                        <td><input type="password" name="cpwd" placeholder="1212" required></td>
+                    </tr>
+                    <tr>
+                        <th>Enter Mobile Number</th>
+                        <td><input type="tel" name="mob" placeholder="12345789" required></td>
+                    </tr>
+                    <tr>
+                        <th>Select Date of Birth</th>
+                        <td><input type="date" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter City</th>
+                        <td><input type="text" name="City" placeholder="Tamil Nadu" required></td>
+                    </tr>
+                    <tr>
+                        <th>Enter Address</th>
+                        <td><textarea style="margin: auto;" rows="3" cols="20"
+                                placeholder="Enter address Details"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>Select Gender</th>
+                        <td>
+                            <input type="radio" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                            <input type="radio" name="gender" value="other"> Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Position for Applied</th>
+                        <td>
+                            <select name="Position">
+                                <option value="" selected="selected" disabled="disabled">Select Position</option>
+                                <option value="1">Web Devolopement</option>
+                                <option value="2">UI-UX Designing</option>
+                                <option value="3">AL/ML</option>
+                                <option value="4">Data Science</option>
+                                <option value="5">Cloud Computing</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Addtional Skills or Certificate</th>
+                        <td><textarea rows="5" cols="20" placeholder="Enter Your Master Skill set"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>Upload Resume Here</th>
+                        <td><input type="file" name="resume"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
