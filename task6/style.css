@@ -1,0 +1,50 @@
+body{
+    background-image: url(57yz3gM-itachi-wallpaper-hd.jpg);
+}
+.flexbox{
+    background-color: rgb(92, 2, 2);
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexbox div{
+    font-weight: bold;
+    background-color: rgba(239, 239, 239, 0.482);
+    margin: 5px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 5px;
+    flex: auto;
+}
+.flexbox div:hover{
+    background-color: rgba(255, 0, 0, 0.78);
+    color: white;
+    transition: background-color 0.6s ease;
+}
+.box{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.box {
+    background-color: rgba(0, 0, 0, 0.261);
+    color: white;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.box div {
+    background-color: rgba(255, 0, 0, 0.144);
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.box div ul,ol{
+    font-size:larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
