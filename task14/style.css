@@ -1,0 +1,30 @@
+body{
+    background-image: url(img/1253115.jpg);
+    background-size: cover;
+}
+.a1{ 
+    z-index: -1;
+    img{
+        width: 100px;
+        height: 100px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    padding-top: 42%;
+    transition: 10s linear;
+    &:hover{
+       
+        padding-top:  0%;
+        padding-left:  50%;
+    }   
+}.star{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        background:linear-gradient(to right, white 1%,black 96%);
+        rotate: 40deg;
+    }
