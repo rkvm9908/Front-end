@@ -1,0 +1,252 @@
+body {
+    background-color: black;
+}
+/* Bouncing ball animation */
+ .ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(200px); }
+    100% { transform: translateY(0); }
+} 
+ 
+
+/* 
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(img/11859.jpg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    margin-left: 25%;
+    align-items: center;
+    height: 100vh;
+}
+.page{
+    background-color: rgba(250, 250, 250, 0.123);
+    height: 65%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        background-color: rgba(227, 0, 235, 0.097);
+    }
+}
+.content{
+    display:flex;
+    position: relative;
+    left: -35px;
+    margin: 10px 0 0 0;
+    border-radius: 20px;
+    padding: 10px 1px 10px 5px;
+    top: 10px;
+    transition: 100ms ease-in-out;
+    p{
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: center;
+        position: absolute;
+        margin-left: 20px;
+        top: -7px;
+        left: 50px;
+    }
+    &:hover{
+        
+        background-color: rgb(22, 22, 22);
+        img{
+            margin-left: 5px;
+        }
+        p{
+          color: rgb(162, 162, 162);
+        }
+    }
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.sidebar{
+    background-color: rgb(0, 0, 0);
+    margin: 25px;
+    margin-top: 50%;
+    margin-left: 20px;
+    height: 350px;
+    width: 50px;
+    overflow-x: hidden;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    &:hover{
+      margin-top: 20%;
+      width: 250px;
+    }
+
+    ul{
+        list-style: none;
+    }
+} */
+
+/* body {
+    font-family: "Poppins", sans-serif;
+    background-color: #b9e1f4;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 100vh;
+    margin: 0;
+}
+.head{
+    display:flex;
+    background-color: #AF7EEB;
+    color: white;
+    width: 340px;
+    height: 40px;
+    line-height: 1px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .nav{
+         width: 40px;
+         height: 40px; 
+         margin-top: 10px;
+         border: none;
+         background-color: transparent;
+         margin-right: 23%;
+         img{
+             width: 20px;
+             height: 20px;
+             margin-right: 5px;
+             position: relative;
+             top: -8px;
+         }
+    }
+}
+
+.todo-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.tsk-int-bs{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(15, 15, 15, 0.82);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.int-blk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.clear{
+    padding: 5px 10px;
+    background-color: #AF7EEB;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    top: -50px;
+    &:hover {
+        background-color: #822dea;
+    }
+}
+#taskInput {
+    width: calc(45% - 60px);
+    display: non;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#addTaskBtn {
+    padding: 2px 20px 10px;
+    background-color: #AF7EEB;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    top: 35px;
+    left: 30%;
+    cursor: pointer;
+    img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        position: relative;
+        left: -5px;
+        top: 5px;
+    }
+}
+
+#addTaskBtn:hover {
+    background-color: #822dea;
+}
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    list-style: circle;
+}
+
+.task-item:hover {
+    background-color: #f1f1f1;
+}
+
+.task-item.selected {
+    background-color: #e9ecef; 
+    list-style: disc;
+    li::marker{
+        color: #822dea;
+    }
+}
+
+.task-item.underline {
+    text-decoration: underline;
+}
+
+.delete-btn {
+    display: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.task-item.selected .delete-btn {
+    display: block;
+} */
