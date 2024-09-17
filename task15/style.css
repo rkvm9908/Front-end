@@ -1,7 +1,8 @@
-body {
+/* Bouncing ball animation */
+/* body {
     background-color: black;
 }
-/* Bouncing ball animation */
+
  .ball {
     position: absolute;
     top: 50%;
@@ -17,10 +18,10 @@ body {
     0% { transform: translateY(0); }
     50% { transform: translateY(200px); }
     100% { transform: translateY(0); }
-} 
+}  */
  
+/* sidebar */
 
-/* 
 
 body {
     font-family: "Poppins", sans-serif;
@@ -96,9 +97,12 @@ body {
     ul{
         list-style: none;
     }
-} */
+}
 
-/* body {
+
+/* todo list */
+/* 
+body {
     font-family: "Poppins", sans-serif;
     background-color: #b9e1f4;
     display: flex;
