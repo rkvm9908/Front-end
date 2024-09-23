@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="profile">
+                    <span class="username">Mathuprasanth R K</span>
+                    <div class="proimg"></div>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i><img src="img/icons8-dashboard-24.png" alt="">
+                            Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i><img src="img/icons8-mailbox-25.png" alt="">
+                            Mailboxes</a></li>
+                    <li><a href="#"><i class="fas fa-folder"></i><img src="img/icons8-cloud-24.png" alt=""> File
+                            Manager</a></li>
+                    <li><a href="#"><i class="fas fa-calendar"></i><img src="img/icons8-calendar-24.png" alt="">
+                            Calendar</a></li>
+                    <li><a href="#"><i class="fas fa-tasks"></i><img src="img/icons8-test-24.png" alt=""> Todo</a></li>
+                    <li><a href="logout/logout.html"><i class="fas fa-sign-out-alt"></i><img src="img/icons8-logout-24.png" alt="">
+                            Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="opt-in">
+                <img src="img/icons8-previous-24.png" alt="">
+                <img src="img/icons8-plus-24.png" alt="" >
+                <img src="img/icons8-compass-24.png" alt="">
+                
+                </div>
+                
+                <div class="user-options">
+                    <button class="btn" id="applications-btn">Applications</button>
+                    <button class="btn" id="reports-btn">Reports</button>
+                    <button class="btn" id="projects-btn">Projects</button>
+                    <div class="language">
+                        <select id="language-selector">
+                            <option value="EN">English</option>
+                            <option value="FR">Français</option>
+                            <option value="ES">Español</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+            <h1>Dashboard</h1>
+            <!-- Statistics Section -->
+            <section class="statistics">
+                <div class="stat-card">
+                    <div class="stat-icon blue-bg"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="stat-info">
+                        <h2>Today's Sales</h2>
+                        <p id="sales">$38,211</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green-bg"><i class="fas fa-users"></i></div>
+                    <div class="stat-info">
+                        <h2>Active Users</h2>
+                        <p id="active-users">23,491</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon red-bg"><i class="fas fa-download"></i></div>
+                    <div class="stat-info">
+                        <h2>Downloads</h2>
+                        <p id="downloads">140,390</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Tasks Section -->
+            <section class="tasks">
+                <div class="task-card">
+                    <h2>Active Tasks</h2>
+                    <ul id="active-tasks-list">
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 bg-green">
+                                    <img src="img/icons8-complete-24.png">
+                                </div>
+                                <div>
+                                    <b>Dashboard UI optimizations</b>
+                                    <p>Oskar Hudson</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 bg-blue">
+                                    <img src="img/icons8-shield-24.png">
+                                </div>
+                                <div>
+                                    <b>Mailbox cleanup</b>
+                                    <p>Oskar Hudson</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 bg-voilate">
+                                    <img src="img/icons8-timer-24.png">
+                                </div>
+                                <div>
+                                    <b>Header scroll bugfix</b>
+                                    <p>Oskar Hudson</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 bg-yellow">
+                                    <img src="img/icons8-puzzle-24.png">
+                                </div>
+                                <div>
+                                    <b>File manager performance optimization</b>
+                                    <p>Oskar Hudson</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 bg-red">
+                                    <img src="img/icons8-invert-colors-24.png">
+                                </div>
+                                <div>
+                                    <div>
+                                        <b>Calendar performance optimization</b>
+                                        <p>Oskar Hudson</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="task-card">
+                    <h2>Todo</h2>
+                    <ul class="todo-list">
+                        <li><input type="checkbox" class="task-checkbox"> Localization for file manager</li>
+                        <li><input type="checkbox" class="task-checkbox"> New e-commerce UX/UI design</li>
+                        <li><input type="checkbox" class="task-checkbox"> Localization for calendar</li>
+                        <li><input type="checkbox" class="task-checkbox"> Localization for todo</li>
+                        <li><input type="checkbox" class="task-checkbox"> Localization for dashboard</li>
+                    </ul>
+                </div>
+                <div class="task-card">
+                    <h2>In Progress</h2>
+                    <ul id="in-progress-list">
+                        <li></li>
+                        <div class="active-task">
+                            <div class="stat-icon1 bg-green">
+                                <img src="img/icons8-complete-24.png">
+                            </div>
+                            <div class="inpro">
+                                <b>Dashboard UI optimizations</b>
+                                <span class="status">75%</span>
+                            </div>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 bg-blue">
+                                    <img src="img/icons8-shield-24.png">
+                                </div>
+                                <div class="inpro">
+                                    <b>Mailbox cleanup</b>
+                                    <span class="status">50%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 bg-voilate">
+                                    <img src="img/icons8-timer-24.png">
+                                </div>
+                                <div class="inpro">
+                                    <b>Header scroll bugfix</b>
+                                    <span class="status">40%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 bg-yellow">
+                                    <img src="img/icons8-puzzle-24.png">
+                                </div>
+                                <div class="inpro">
+                                    <b>File manager performance optimization</b>
+                                    <span class="status">30%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 bg-red">
+                                    <img src="img/icons8-invert-colors-24.png">
+                                </div>
+                                <div class="inpro">
+                                    <b>Calendar performance optimization</b>
+                                    <span class="status">60%</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Chart Section -->
+            <div class="chart-re">
+                <section class="chart">
+                    <h3>Earnings</h3>
+                    <canvas id="earningsChart"></canvas>
+                </section>
+                <div class="report">
+                    <h3>Report</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus incidunt facilis, culpa
+                        accusamus itaque deserunt voluptas quis neque officiis.</p>
+                    <div class="re-list">
+                        <div class="task">
+                            <div class="task-info">
+                                <div class="icon green">
+                                    <p>Dashboard UI optimisations</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <div class="task-info">
+                                    <div class="icon blue"></div>
+                                    <p>Mailbox cleanup</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <div class="task-info">
+                                    <div class="icon purple"></div>
+                                    <p>Header scroll bugfix</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <div class="task-info">
+                                    <div class="icon orange"></div>
+                                    <p>Localization for file manager</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <div class="task-info">
+                                    <div class="icon red"></div>
+                                    <p>New E-commerce UX/UI design</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 30%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Summary Section -->
+            <section class="summary">
+                <div class="summary-card">
+                    <h2>Tasks Completed</h2>
+                    <p id="tasks-completed">1,871</p>
+                    <canvas id="tasksCompletedChart"></canvas>
+                </div>
+                <div class="summary-card">
+                    <h2>Engagement</h2>
+                    <p id="engagement">45,661</p>
+                    <canvas id="engagementChart"></canvas>
+                </div>
+                <div class="summary-card">
+                    <h2>Balance</h2>
+                    <p id="balance">$218,655</p>
+                    <canvas id="balanceChart"></canvas>
+                </div>
+            </section>
+            <div class="containerx">
+                <!-- Post Section -->
+                <div class="post-card">
+                    <h4>Quisque congue risus sit amet pellentesque fermentum</h4>
+                    <p class="post-content">
+                        Morbi bibendum, mi et lacinia ornare, turpis justo viverra risus, at tristique tortor massa ut
+                        arcu. Suspendisse potenti. Suspendisse cursus aliquam dictum. Curabitur nec fringilla orci.
+                        Vivamus ut viverra elit.
+                    </p>
+                    <span class="more-content" style="display: none; color: #6c757d;">
+                        Suspendisse potenti. Suspendisse cursus aliquam dictum. Curabitur nec fringilla orci. Vivamus ut
+                        viverra elit.
+                        Pellentesque id interdum odio. Fusce finibus maximus egestas. Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Adipisci dolor aspernatur illo eos neque tenetur. Iste quo
+                        voluptatum quibusdam. Eaque, doloremque. Fuga dolore rerum veniam impedit laudantium voluptas
+                        molestiae, rem ullam ipsum unde labore vel nulla, dolores, voluptatum sint at sed et minus
+                        mollitia itaque? Obcaecati voluptatem quam necessitatibus beatae amet deleniti laborum fuga
+                        aliquam repudiandae autem consequatur corrupti, delectus nemo quasi earum corporis at incidunt
+                        possimus voluptas ipsum recusandae aspernatur harum dolorum tempora. Odio doloribus voluptatum
+                        quasi laudantium, reiciendis ad et eum earum tempora autem rem quas nostrum, provident
+                        voluptatibus quo, atque expedita accusantium iste hic voluptate est aliquid!
+                    </span>
+                    <div class="post-footer">
+                        <span>Date: 6:30 PM</span>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+                <!-- Connection Request Section -->
+                <div class="connection-card">
+                    <div class="connection-header">
+                        <span class="time-ago">17 Minutes Ago</span>
+                    </div>
+                    <div class="connection-info">
+                        <img src="img/6531369.jpg" class="profile-pic">
+                        <div class="connection-details">
+                            <p><strong>rk_rowdy_9908</strong></p>
+                            <p>45 mutual connections</p>
+                            <p>Senior Go Developer at Google</p>
+                        </div>
+                    </div>
+                    <div class="connection-actions">
+                        <button class="accept-btn">✔ Accept</button>
+                        <button class="ignore-btn">✘ Ignore</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
